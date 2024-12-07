@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("background.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: Determination;
+  src: url(Determination.ttf);
+}
+
+body,
+html {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  justify-items: start;
+  align-items: start;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 80%;
+}
+
+.header {
+  grid-column: 1 / -1;
+  color: white;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  justify-items: start;
+  align-items: start;
+  width: 100%;
+  padding: 20px;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  justify-items: start;
+  align-items: start;
+}
+
+.results p {
+  margin: 0 10px 0 0;
+  text-align: left;
+}
+
+h1 {
+  font-family: Determination;
+  font-size: 4rem;
+  color: white;
+  letter-spacing: 1.65px;
+  text-align: center;
+  font-weight: 400;
+  margin: 10px 0 10px 0;
+  text-shadow: 2px 2px 2px black;
+}
+
+h2 {
+  text-decoration: underline;
+  font-family: Determination;
+  font-size: 2.5rem;
+  color: white;
+  padding-left: 20px;
+  font-weight: 50;
+  margin: 10px 0;
+  text-align: left;
+}
+
+p {
+  font-family: Determination;
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 20px;
+  font-weight: 50;
+  margin: 5px 0;
+  text-align: left;
+}
+
+input,
+textarea {
+  color: white;
+  font-size: 25px;
+  background-color: rgb(37, 37, 37);
+  font-family: "Determination";
+  padding: 2px;
+  margin: 5px 0;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:hover,
+textarea:hover {
+  background-color: rgb(87, 87, 87);
+  border-color: rgb(255, 255, 255);
+}
+
+input.inputBoxSize1 {
+  width: 6em;
+}
+
+input.inputBoxSize2 {
+  width: 2em;
+}
+
+input.inputBoxSize3 {
+  width: 2em;
+}
+
+input[type="range"] {
+  width: 300px;
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(
+    to right,
+    rgb(48, 243, 27),
+    rgb(255, 201, 23),
+    rgb(251, 4, 12)
+  );
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+#funny {
+  width: 375px;
+  height: 210px;
+  transform: scaleY(1.5);
+  justify-self: end;
+  grid-column: span 2;
+  margin-left: 200px;
+}
+
+#resultsText {
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.outputText {
+  color: rgb(32, 217, 32);
+}
+
+footer {
+  grid-column: 1 / -1;
+  background-color: #171717;
+  font-family: Determination;
+  color: white;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.myButton,
+.myButton a {
+  text-align: left;
+  color: #bb2def;
+  background-color: #2b2435;
+  font-size: 1.5rem;
+  font-family: Determination;
+}
+
+@media (max-width: 768px) {
+  .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #funny {
+    margin: 10px 0;
+    align-self: center;
+  }
+}

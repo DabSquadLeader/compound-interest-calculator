@@ -1,0 +1,14 @@
+{
+  "name": "compound-interestt-calculator",
+  "version": "1.0.0",
+  "description": "Calculator for compound interest",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": ["html", "css"],
+  "author": "Colin Bajo-Smith",
+  "devDependencies": {
+    "serve": "11.2.0"
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Compound Interest Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+      <header>
+        
+        <h1>Compound Interest Calculator</h1>
+        
+      </header>
+      <main>
+        <div class="container">
+          <h2>Input</h2>
+          <br></br>
+          <p>Principal Amount: $<input id="principal" class = "inputBoxSize1"/></p>
+          <p>Compound interest <input id="apr" class = "inputBoxSize3"/> time(s) annually (APR)</p>
+          <p>Interest Rate: <input id="interest" type="range"
+            min="1"
+            max="100"
+            value="2.5"
+            step="1"
+            oninput="updateSliderValue(this.value)"
+            />&nbsp<span id="sliderValue">1</span>%</p>
+          <p>Number of years: <input id="years" class = "inputBoxSize3"/></p>
+          <br></br>
+          <h2 id="resultsText">Results</h2>
+          <div class="results">
+            <p>Amount earned from interest: <input id="amount" readonly class="outputText"/></p>
+            <p>Total earned: <input id="total" readonly class="outputText"/></p>
+            <img id="funny" src="funny.png" alt="Funny image" />
+          </div>
+          <div>
+            <button id="music" class="myButton">Music: OFF</button>
+          </div>
+      </main>
+      <footer>
+        <div>© Colin Bajo-Smith 2024</div>
+        <div><a href="https://codesandbox.io/p/sandbox/7t3psc?file=%2Fstyles.css%3A186%2C27">Code</a></div>
+      </footer>
+    </div>
+  </body>
+</html>
