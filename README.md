@@ -29,4 +29,4 @@ This project is a Compound Interest Calculator web application. It allows users 
    - Event listeners for user interaction with input fields and the music toggle button.
    - A function to update the slider value with input.
 
-- [GitHub Link]() - Project code repository.
+- [GitHub Link](https://github.com/DabSquadLeader/compound-interest-calculator) - Project code repository.
