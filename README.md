@@ -30,3 +30,4 @@ This project is a Compound Interest Calculator web application. It allows users 
    - A function to update the slider value with input.
 
 - [GitHub Link](https://github.com/DabSquadLeader/compound-interest-calculator) - Project code repository.
+- [Website Link](https://dabsquadleader.github.io/compound-interest-calculator/) - Project code repository.
